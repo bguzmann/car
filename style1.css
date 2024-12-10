@@ -1,0 +1,345 @@
+*{
+    margin: 0px;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.NavBarSection{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background-color: #a1a1a1a1;
+    width:100%;
+    height:5%;
+    transition: 0.5s;
+}
+
+
+.NavBar{
+    display:flex;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-top: 0px;
+    align-items: left;
+}
+
+.NavBar.sticky{
+    background: #e6ecef;
+    padding: 30px 100px;
+    box-shadow: 0 5px 20px rgb(80, 43, 3);
+}
+
+
+.NavBar::before{
+    content: "";
+    width:100%;
+    height:100%;
+
+}
+.NavBar ul{
+    display: flex;
+    flex-wrap: wrap; 
+    text-decoration: none;
+    list-style: none;
+    justify-content: right;
+    text-align: right;
+}
+
+.NavBar ul .hover{
+    letter-spacing: 6px;
+    border-radius: 20px;
+    color: rgb(59, 160, 248);
+}
+.NavBar img{
+    height:100%;
+    width: 50px;
+}
+
+.NavBar-logo{
+    position: relative;
+}
+.NavBar ul li a:hover{
+    background-color: #a1a1a1a1;
+}
+.NavBar ul li a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    padding:30px;
+    color: rgb(54, 27, 12);
+    list-style: unset;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.banner{
+    list-style: none;
+    visibility: inherit;
+    float: right;
+    color: rgb(54, 27, 12);
+    list-style: unset;
+    
+
+}
+
+/*home*/
+
+.home{
+    background-image: url(images/car1.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-size: cover;
+    animation-name: zoom;
+    animation-duration: 20s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.box1{
+    height:auto;
+    width:70%;
+    margin-top:35%;
+    margin-left: 15%;
+    text-align: center;
+    font-family: cursive;
+    padding:20px;
+}
+.box1 h2{
+    position: relative;
+    font-size: 30px;
+    color: white;
+}
+
+.hhhhh{
+    background-color: #a8a8a8ad;
+    padding: 35px;
+}
+.hhhhh h2{
+    margin-top: 60px;
+    font-family: "JLR Proxima Nova","Arial Unicode","arial","helvetica",sans-serif;
+    letter-spacing: .351rem;
+    font-size: 25px;
+    text-align: center;
+}
+.hhhhh p{
+    margin-top:20px;
+    text-align: center;
+}
+
+.part2{
+    margin-top: 20px;
+}
+
+.part2 h1{
+    align-items: center;
+    text-align: center;
+}
+.container{
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height:auto;
+    width:100%;
+}
+.cars{
+    border: solid black 4px;
+    background-color: transparent;
+   margin-top: 35px;
+    height: auto;
+    width:23%;
+    background-color: rgb(229 229 229);
+}
+.carimg{
+    display: block;
+    width:100%;
+    height:240px;
+    border-bottom: black solid 4px;
+}
+.cars h2{
+    font-family: "JLR Proxima Nova","Arial Unicode","arial","helvetica",sans-serif;
+    letter-spacing: .351rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cars p{
+    font-family: "JLR Proxima Nova","Arial Unicode","arial","helvetica",sans-serif;
+    padding:7px;
+    color: rgb(99, 95, 95);
+}
+.carvideo{
+    display: block;
+    width:100%;
+    height:240px;
+    border-top: black solid 4px;
+}
+@media screen and (max-width:600px)
+{
+    *{
+        font-size:10px
+    }
+    .container{
+        height:auto;
+    width:80%;
+    }
+    .cars{
+        border: solid black 4px;
+        background-color: rgb(229 229 229);
+       margin-top: 60px;
+        height: auto;
+        width:90%;
+        margin-left: 15%;
+        font-size: 7px;
+    }
+   .carimg{
+       border-bottom: black solid 4px;
+    display: block;
+    width: 100%;
+    height:250px;
+   } 
+}
+
+/*about styling */
+
+section{
+    padding: 100px;
+}
+
+
+/*row styling for about*/
+.row{
+    padding: 1 1rem;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    padding: 1 1rem;
+    position: relative;
+    width: 48%;
+
+}
+
+/*titletext styling*/
+.titletext{
+    margin: 1 1rem;
+    color:rgb(220, 17, 17) ;
+    font-size: 2rem;
+    font-weight: 300;
+    align-self: center;
+    
+}
+    
+    
+.row .col50 .imgbx{
+    position: relative;
+    width: 100%;
+    min-height:300px ;
+}
+
+/*about image*/
+.row .col50 .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*contact section*/
+
+.Contact{
+    background-image:url(images/car2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.contactform{
+    padding: 75px 30px;
+    background: rgb(116, 114, 114);
+    box-shadow: 0 15px 50px rgba(0, 9, 0,0.05);
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.contactform h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: white;
+  
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    border: 1px solid #af0303;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactform .inputbox input[type="submit"]{
+    font-size: 1em;
+    color: white;
+    background: black;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 2px;
+    max-width: 100px;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+
+}
+
+.contactform .inputbox input[type="submit"]:hover{
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    background: rgb(3, 235, 243);
+    border-radius: 10px;
+}
+
+/*footer section*/
+.copyright-text{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0,0.1);
+    text-align: center;
+    background: gray;
+    height: 80px;
+    
+    }
+    
+    .copyright-text p{
+        color: black;
+        margin-top: 30px;
+    
+    }
+    
+    .copyright-text a{
+        color: rgb(216, 6, 13);
+        text-decoration: none;
+    }
+
+    .NavBar1 img{
+        width: 50%;
+        height: 50%;
+    }
